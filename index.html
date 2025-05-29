@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Spirit Arts</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>Spirit </span> Arts</div>
+        </a>
+        <ul class="side-menu">
+            <li class="active"><a href="#"><i class='bx bxs-dashboard'></i>Home</a></li>
+            <li><a href="#"><i class='bx bx-store-alt'></i>Game</a></li>         
+            <li><a href="#"><i class='bx bx-message-square-dots'></i>Fanpage</a></li>
+            <li><a href="#"><i class='bx bx-group'></i>Group</a></li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">0</span>
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main id="home-main">
+            <!-- Colorful Notification -->
+            <div class="colorful-notice">
+                <i class='bx bxs-party'></i>
+                <span>Chào mừng đến Spirit Arts!</span>
+            </div>
+            <!-- End of Notification -->
+        </main>
+
+        <main id="group-main" style="display: none;">
+            <!-- Group Section -->
+            <div class="colorful-notice">
+                <i class='bx bx-group'></i>
+                <span>Tham gia nhóm Zalo Spirit Arts để giao lưu và nhận hỗ trợ!</span>
+            </div>
+            <div class="group-link" style="text-align:center; margin-top:16px;">
+                <a href="https://zalo.me/g/unqaak724" target="_blank" class="group-btn">
+                    <i class='bx bxl-zalo'></i> Tham gia nhóm Zalo
+                </a>
+            </div>
+            <!-- End of Group Section -->
+        </main>
+
+        <main id="game-main" style="display: none;">
+            <!-- Game Section -->
+            <div class="colorful-notice" id="game-hot-title" style="cursor:pointer;">
+                <i class='bx bx-joystick'></i>
+                <span>Game Hot</span>
+            </div>
+            <div style="text-align:center; margin-top:16px;">
+                <div id="game-select-group" style="display:none; margin-top:16px;">
+                    <button id="game-online-btn" class="game-tab-btn">Pokemon ChiBi H5</button>
+                    <button id="game-download-btn" class="game-tab-btn">Naruto</button>
+                </div>
+            </div>
+            <div id="game-online-content" style="display:none; margin-top:24px;">
+                <a href="http://160.191.175.167:8080/" target="_blank" class="game-btn">
+                    <i class='bx bx-play-circle'></i> Chơi ngay Pokemon ChiBi H5
+                </a>
+            </div>
+            <div id="game-download-content" style="display:none; margin-top:24px;">
+                <a href="#" target="_blank" class="game-btn">
+                    <i class='bx bx-download'></i> Sắp ra mắt
+                </a>
+            </div>
+        </main>
+
+        <main id="fanpage-main" style="display: none;">
+            <!-- Fanpage Section -->
+            <div class="colorful-notice">
+                <i class='bx bx-like'></i>
+                <span>Tham gia Fanpage Spirit Arts để cập nhật tin mới nhất!</span>
+            </div>
+            <div class="fanpage-link" style="text-align:center; margin-top:16px;">
+                <a href="https://www.facebook.com/profile.php?id=61576940182841" target="_blank" class="fanpage-btn">
+                    <i class='bx bxl-facebook-circle'></i> Truy cập Fanpage
+                </a>
+            </div>
+            <!-- End of Fanpage Section -->
+        </main>
+        <script src="index.js"></script>
+    </div>
+
+</html>
